@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <title>Nolu's week1</title>
+</head>
+<style>
+  body {
+    background: #f5f0fe;
+  }
+
+  h1 {
+    font-size: xx-large;
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: center;
+    color: #885df1;
+  }
+
+  h2 {
+    color: #272044;
+    text-align: center;
+  }
+
+
+  .basics {
+    color: red;
+  }
+
+  .shecodes {
+    color: green;
+  }
+
+  .free {
+    color: #440bac;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 15px 20px;
+    background: transparent;
+    color: #885df1;
+    border: 1px solid #885df1;
+    border-radius: 30px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease;
+  }
+
+  button:hover {
+    color: #fff;
+    background: #885df1;
+  }
+
+  li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  ul {
+    padding: 0%;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  div {
+    text-align: center;
+    font-size: smaller;
+    padding: 206px;
+  }
+
+  span {
+    color: #885df1;
+  }
+</style>
+
+<body>
+
+  <h1>SheCodes</h1>
+  <h2>coding workshop</h2>
+  <p>
+    <button>apply now</button>
+  </p>
+  <ul>
+    <li>
+      <a class="free" href="https://www.shecodes.io/students" target="_blank"> coders </a>
+
+
+    </li>
+    <li>
+      <a class="basics" href="https://www.shecodes.io/workshops" target="_blank" />courses </a>
+    </li>
+    <li>
+      <a class="shecodes" href="https://www.shecodes.io/stories" target="_blank" />stories</a>
+  </ul>
+  <hr>
+  <p>
+    <strong>more info</strong>
+
+  </p>
+
+  <img src="https://wearetechwomen.com/wp-content/uploads/2021/09/shutterstock_1687431796.jpg" width="300" />
+  <div>
+    <span>email:</span> hello@shecodes.io <span>instagram:</span>shecodes.io
+  </div>
+
+
+  <script>
+  
+    function weatherResponse(response) {
+      console.log(response);
+      console.log(response.data.temperature)
+      let h1 =document.querySelector("h1")
+      h1.innerHTML = `it is ${response.data.temperature.current} degrees in Sydney`
+
+    }
+    let apikey = "https://api.shecodes.io/weather/v1/current?query=Sydney&key=d50e47aea437320o54f661e4b9ct46b9"
+    axios.get(apikey).then(weatherResponse)
+  </script>
+
+
+
+</body>
+
+</html>

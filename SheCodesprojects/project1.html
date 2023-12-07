@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afro hair</title>
+  <style>
+    body {
+      background-color: rgb(241, 241, 241);
+      text-align: center;
+      color: #fff;
+      width: auto;
+      padding: 30px;
+      margin: 30px;
+      font-family:Arial, Helvetica, sans-serif
+    
+    }
+
+    h1 {
+      color: rgb(156, 60, 22);
+      font-weight: lighter;
+      font-style: italic;
+      font-family: 'Times New Roman', Times, serif;
+      border:1px #28292d solid;
+      border-radius: 10px;
+      background-color: #96754e;
+      line-height: 35px;
+    }
+
+    h2 {
+      font-weight: lighter;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color: rgb(104, 104, 93);
+    }
+
+    .description {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      color: whitesmoke;
+      position: relative;
+      background-color: #28292d;
+      background: linear-gradient(to right, #f3bc77, #1d1716);
+      padding: 30px;
+
+
+      margin: 30px auto;
+       background-size: 300% 300%;
+
+     
+      animation: backgroundUpdate 20s ease infinite;
+      animation-timing-function: ease;
+    }
+
+    @keyframes backgroundUpdate {
+       0% {
+            background-position: 0% 50%
+        }
+        25% {
+            background-position: 75% 25%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        75% {
+            background-position: 25% 75%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    button{background: #a09897;
+    border-radius: 30px;
+  border: 20px brown;
+font-size: 30px;}
+button:hover {
+      background: rgb(15, 14, 14);
+      color:beige;
+      border: 1px solid (#f3bc77);  
+      cursor: pointer;
+    }
+    img{border-radius: 15px;
+      border: #1d1716 solid;
+      max-width: 30%;
+
+
+    }
+    hr{color: black;
+    font-size: larger;}
+    .line{color: black;}
+    a{text-decoration: none;
+    display: block;
+  color: #5a3405;
+}
+.by{color: #28292d;}
+.myname{font-weight:bolder;
+color: #28292d;
+font-size: 20px;
+}
+  </style>
+  </head>
+  
+  <body>
+    <h1>Afro Hair</h1>
+  
+    <h2>The History</h2>
+    <hr>
+    <img src="https://www.colorfulblack.com/cdn/shop/articles/photo_article_afro.png?v=1623325905
+    "
+      alt="afrostyle" >
+  
+    <br>
+    <div class="description">
+
+      <em> A hairstyle originating with Black people, in which naturally curly or frizzy hair is cut into a full, bushy shape
+      all
+      over the head.the history of afro hair is really interesting. Afro hair has been present in many cultures for
+      centuries, from ancient
+      Egypt to modern-day Africa. In the United States, afro hair was historically seen as a sign of pride and resistance
+      during the Civil Rights Movement. Today, afro hair is often celebrated as a beautiful, unique, and versatile hair
+      type.
+      There are so many different styles and techniques that can be used to care for afro hair, including wash and gos,
+      braids, twists, and locs.</em>
+      <a href="https://en.wikipedia.org/wiki/Afro" target="_blank">
+        Read More
+      </a>
+      <hr class="line">
+      <button> Click here</button>
+    </div>
+   <div class="by">This page was built by <a href="https://www.linkedin.com/in/noluthando-molui-470a68232" target="_blank"
+    ><span class="myname">Nolu molui</span></a></div> 
+  </body>
+  <script>
+   // function hairbutton() {
+     // let name = prompt("what is your name?"); let hairtype = prompt("what is your type?");
+     // let h2 = document.querySelector("h2")
+     // if (hairtype === "4c" && "4b") { h2.innerHTML = ("Hi " + name + " !! " + "you can use native child hair care") }
+    //  else {
+    //    h2.innerHTML = ("Hi " + name + "!! " + "We have other options for your hair")  }
+   // }let afrobuttton = document.querySelector("button");
+   // afrobuttton.addEventListener("click", hairbutton);
+
+   function temperature(event) {
+    event.preventDefault();
+    event.target.innerHTML = "18 degrees";
+    
+}
+let Tempbutton= document.querySelector("button");
+Tempbutton.addEventListener("click", temperature);
+
+  </script>
+  
+  </html>
